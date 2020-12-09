@@ -13,5 +13,20 @@ public class NoNullArrayList<T> extends ArrayList<T> {
 		if (value==null) {
 			throw new IllegalArgumentException();
 		}
+	}
+
+
+	public T add(T value) {
+		if (value==null) {
+			throw new IllegalArgumentException();
+		}
 	} 
+
+
+	public T add(int index,T value) {
+		if (value==null) {
+			throw new IllegalArgumentException();
+		}
+	}
+
 }
