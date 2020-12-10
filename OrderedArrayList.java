@@ -21,4 +21,10 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
 	public void add(int index, T element) {
 		add(element);
 	}
+
+
+	public void set(int index, T element) {
+		super.remove(index);
+		super.add(element);
+	}
 }
