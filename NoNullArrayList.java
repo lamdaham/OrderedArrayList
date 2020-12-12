@@ -13,11 +13,12 @@ public class NoNullArrayList<T> extends ArrayList<T> {
 		if (value==null) {
 			throw new IllegalArgumentException();
 		}
-		return super.set(index, element);
+		super.set(index, value);
+		return value;
 	}
 
 
-	public T add(T value) {
+	public boolean add(T value) {
 		if (value==null) {
 			throw new IllegalArgumentException();
 		}
@@ -25,11 +26,11 @@ public class NoNullArrayList<T> extends ArrayList<T> {
 	} 
 
 
-	public T add(int index,T value) {
+	public void add(int index,T value) {
 		if (value==null) {
 			throw new IllegalArgumentException();
 		}
-		return super.add(index, value);
+		super.add(index, value);
 	}
 
 }
