@@ -13,8 +13,7 @@ public class NoNullArrayList<T> extends ArrayList<T> {
 		if (value==null) {
 			throw new IllegalArgumentException();
 		}
-		super.set(index, value);
-		return value;
+		return super.set(index, value);
 	}
 
 
